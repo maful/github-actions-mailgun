@@ -23,3 +23,4 @@ jobs:
         to: ${{ secrets.TO_EMAIL }}
         subject: 'Action subject'
         body: 'Action body'
+        attachment: 'github.png'

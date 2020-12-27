@@ -29372,6 +29372,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const core = __importStar(__webpack_require__(470));
 const mailgun_js_1 = __importDefault(__webpack_require__(185));
+const path_1 = __importDefault(__webpack_require__(622));
 function run() {
     const apiKey = core.getInput('api_key', { required: true });
     const domain = core.getInput('domain', { required: true });
@@ -29381,12 +29382,16 @@ function run() {
     const body = core.getInput('body');
     const attachment = core.getInput('attachment');
     const mg = mailgun_js_1.default({ apiKey: apiKey, domain: domain });
-    const data = {
+    let data = {
         from: from,
         to: to,
         subject: subject || 'Hello from Github Actions Mailgun',
         text: body || 'Hello from Github Actions Mailgun',
     };
+    if (attachment) {
+        const filepath = path_1.default.join(__dirname, '..', attachment);
+        data.attachment = filepath;
+    }
     mg.messages().send(data, function (err, body) {
         if (err) {
             core.setFailed(`Failed to send an email with error: ${err}`);

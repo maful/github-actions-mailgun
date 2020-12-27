@@ -1,5 +1,6 @@
 import * as core from '@actions/core';
 import mailgun from 'mailgun-js';
+import path from 'path';
 
 function run() {
   const apiKey: string = core.getInput('api_key', { required: true });
@@ -11,12 +12,18 @@ function run() {
   const attachment: string = core.getInput('attachment');
 
   const mg = mailgun({ apiKey: apiKey, domain: domain });
-  const data = {
+  let data: mailgun.messages.SendData = {
     from: from,
     to: to,
     subject: subject || 'Hello from Github Actions Mailgun',
     text: body || 'Hello from Github Actions Mailgun',
   };
+
+  if (attachment) {
+    const filepath = path.join(__dirname, '..', attachment);
+    data.attachment = filepath;
+  }
+
   mg.messages().send(data, function(err, body) {
     if (err) {
       core.setFailed(`Failed to send an email with error: ${err}`);
