@@ -17,7 +17,9 @@ jobs:
       id: run_action
       uses: ./
       with:
-        my_input: 'World'
-
-    - name: log action output
-      run: echo ${{steps.run_action.outputs.my_output}}
+        api_key: ${{ secrets.API_KEY }}
+        domain: ${{ secrets.DOMAIN }}
+        from: ${{ secrets.FROM_EMAIL }}
+        to: ${{ secrets.TO_EMAIL }}
+        subject: 'Action subject'
+        body: 'Action body'
