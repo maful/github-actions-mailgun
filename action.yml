@@ -2,10 +2,27 @@ name: 'Action Mailgun Email'
 description: 'Send email with Mailgun through Github Actions'
 author: 'maful'
 inputs:
-  my_input:
-    description: 'input description here'
-    default: 'World'
+  api_key:
+    description: 'Mailgun API Key'
     required: true
+  domain:
+    description: 'Mailgun Domain'
+    required: true
+  from:
+    description: 'Sender email'
+    required: true
+  to:
+    description: 'Recipient email'
+    required: true
+  subject:
+    description: 'Email subject'
+    required: false
+  body:
+    description: 'Email body'
+    required: false
+  attachment:
+    description: 'Attachment'
+    required: false
 runs:
   using: 'node12'
   main: 'dist/index.js'

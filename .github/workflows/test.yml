@@ -1,16 +1,18 @@
 name: test
+
 on:
-  pull_request:
   push:
-    branches:
-      - main
-      - 'releases/*'
+    branches: [ main ]
+    tags:
+      - 'v*'
+  pull_request:
+    branches: [ main ]
 
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - name: run action
       id: run_action
       uses: ./

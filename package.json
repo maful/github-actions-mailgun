@@ -20,9 +20,11 @@
   "author": "maful",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.2.0"
+    "@actions/core": "^1.2.0",
+    "mailgun-js": "^0.22.0"
   },
   "devDependencies": {
+    "@types/mailgun-js": "^0.22.11",
     "@types/node": "^12.7.12",
     "@zeit/ncc": "^0.20.5",
     "prettier": "^1.19.1",
