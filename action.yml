@@ -1,0 +1,14 @@
+name: 'Action Mailgun Email'
+description: 'Send email with Mailgun through Github Actions'
+author: 'maful'
+inputs:
+  my_input:
+    description: 'input description here'
+    default: 'World'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+branding:
+  color: 'green'
+  icon: 'mail'
