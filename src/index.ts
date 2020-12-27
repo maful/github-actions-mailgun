@@ -1,7 +1,6 @@
 import * as core from '@actions/core';
 import mailgun from 'mailgun-js';
 import path from 'path';
-import fs from 'fs';
 
 function run() {
   const apiKey: string = core.getInput('api_key', { required: true });
