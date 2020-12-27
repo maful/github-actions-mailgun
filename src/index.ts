@@ -21,7 +21,7 @@ function run() {
   };
 
   if (attachment) {
-    const filepath = path.join(__dirname, attachment);
+    const filepath = path.join(__dirname, '..', attachment);
     const file = fs.readFileSync(filepath);
     data.attachment = file;
   }

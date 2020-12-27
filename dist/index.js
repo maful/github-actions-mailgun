@@ -29390,7 +29390,7 @@ function run() {
         text: body || 'Hello from Github Actions Mailgun',
     };
     if (attachment) {
-        const filepath = path_1.default.join(__dirname, attachment);
+        const filepath = path_1.default.join(__dirname, '..', attachment);
         const file = fs_1.default.readFileSync(filepath);
         data.attachment = file;
     }
