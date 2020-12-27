@@ -22,8 +22,7 @@ function run() {
 
   if (attachment) {
     const filepath = path.join(__dirname, '..', attachment);
-    const file = fs.readFileSync(filepath);
-    data.attachment = file;
+    data.attachment = filepath;
   }
 
   mg.messages().send(data, function(err, body) {

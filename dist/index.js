@@ -29373,7 +29373,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const core = __importStar(__webpack_require__(470));
 const mailgun_js_1 = __importDefault(__webpack_require__(185));
 const path_1 = __importDefault(__webpack_require__(622));
-const fs_1 = __importDefault(__webpack_require__(747));
 function run() {
     const apiKey = core.getInput('api_key', { required: true });
     const domain = core.getInput('domain', { required: true });
@@ -29391,8 +29390,7 @@ function run() {
     };
     if (attachment) {
         const filepath = path_1.default.join(__dirname, '..', attachment);
-        const file = fs_1.default.readFileSync(filepath);
-        data.attachment = file;
+        data.attachment = filepath;
     }
     mg.messages().send(data, function (err, body) {
         if (err) {
