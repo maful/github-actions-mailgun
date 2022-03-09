@@ -6,15 +6,15 @@ Unofficial - This action gives the ability to send emails with Mailgun.
 
 ## Inputs
 
-| Key        | Required | Description                                                                                                                           |
-|------------|----------|---------------------------------------------------------------------------------------------------------------------------------------|
-| api_key    | Yes      | Mailgun API Key                                                                                                                       |
-| domain     | Yes      | Mailgun Domain                                                                                                                        |
-| from       | Yes      | Email sender                                                                                                                          |
-| to         | Yes      | Email receiver                                                                                                                        |
-| subject    | No       | Email subject                                                                                                                         |
-| body       | No       | Email body                                                                                                                            |
-| attachment | No       | Currently, you're only able to attach a single attachment. The attachment location is relative to the root path of your project. |
+| Key | Required | Description |
+|---|---|---|
+| api_key | Yes | Mailgun API Key |
+| domain | Yes | Mailgun Domain |
+| from | Yes | Email sender |
+| to | Yes | Email receiver |
+| subject | No | Email subject |
+| body | No | Email body |
+| attachment | No | Currently, you are only able to attach a single attachment. You need to provide a full path location of the attachment. |
 
 ## Example usage
 
@@ -28,7 +28,7 @@ Unofficial - This action gives the ability to send emails with Mailgun.
     to: ${{ secrets.TO_EMAIL }}
     subject: 'Action subject'
     body: 'Action body'
-    attachment: 'github.png'
+    attachment: ${{ github.workspace }}/github.png
 ```
 
 ## 🙏 Contributing

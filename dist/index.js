@@ -21671,7 +21671,7 @@ function run() {
         text: body,
     };
     if (attachment) {
-        const filepath = path_1.default.join(__dirname, '..', attachment);
+        const filepath = path_1.default.basename(attachment);
         data.attachment = filepath;
     }
     mg.messages().send(data, function (err, body) {
