@@ -34,7 +34,7 @@ module.exports =
 /******/ 	// the startup function
 /******/ 	function startup() {
 /******/ 		// Load entry module and return exports
-/******/ 		return __webpack_require__(526);
+/******/ 		return __webpack_require__(325);
 /******/ 	};
 /******/ 	// initialize runtime
 /******/ 	runtime(__webpack_require__);
@@ -3394,7 +3394,7 @@ exports.build = build
 /* 53 */
 /***/ (function(module) {
 
-module.exports = {"_from":"estraverse@^4.2.0","_id":"estraverse@4.3.0","_inBundle":false,"_integrity":"sha512-39nnKffWz8xN1BU/2c79n9nB9HDzo0niYUqx6xyqUnyoAnQyyWpOTdZEeiCch8BBu515t4wp9ZmgVfVhn9EBpw==","_location":"/estraverse","_phantomChildren":{},"_requested":{"type":"range","registry":true,"raw":"estraverse@^4.2.0","name":"estraverse","escapedName":"estraverse","rawSpec":"^4.2.0","saveSpec":null,"fetchSpec":"^4.2.0"},"_requiredBy":["/escodegen"],"_resolved":"https://registry.npmjs.org/estraverse/-/estraverse-4.3.0.tgz","_shasum":"398ad3f3c5a24948be7725e83d11a7de28cdbd1d","_spec":"estraverse@^4.2.0","_where":"/Users/maful/code/tmp/github-actions-mailgun/node_modules/escodegen","bugs":{"url":"https://github.com/estools/estraverse/issues"},"bundleDependencies":false,"deprecated":false,"description":"ECMAScript JS AST traversal functions","devDependencies":{"babel-preset-env":"^1.6.1","babel-register":"^6.3.13","chai":"^2.1.1","espree":"^1.11.0","gulp":"^3.8.10","gulp-bump":"^0.2.2","gulp-filter":"^2.0.0","gulp-git":"^1.0.1","gulp-tag-version":"^1.3.0","jshint":"^2.5.6","mocha":"^2.1.0"},"engines":{"node":">=4.0"},"homepage":"https://github.com/estools/estraverse","license":"BSD-2-Clause","main":"estraverse.js","maintainers":[{"name":"Yusuke Suzuki","email":"utatane.tea@gmail.com","url":"http://github.com/Constellation"}],"name":"estraverse","repository":{"type":"git","url":"git+ssh://git@github.com/estools/estraverse.git"},"scripts":{"lint":"jshint estraverse.js","test":"npm run-script lint && npm run-script unit-test","unit-test":"mocha --compilers js:babel-register"},"version":"4.3.0"};
+module.exports = {"name":"estraverse","description":"ECMAScript JS AST traversal functions","homepage":"https://github.com/estools/estraverse","main":"estraverse.js","version":"4.3.0","engines":{"node":">=4.0"},"maintainers":[{"name":"Yusuke Suzuki","email":"utatane.tea@gmail.com","web":"http://github.com/Constellation"}],"repository":{"type":"git","url":"http://github.com/estools/estraverse.git"},"devDependencies":{"babel-preset-env":"^1.6.1","babel-register":"^6.3.13","chai":"^2.1.1","espree":"^1.11.0","gulp":"^3.8.10","gulp-bump":"^0.2.2","gulp-filter":"^2.0.0","gulp-git":"^1.0.1","gulp-tag-version":"^1.3.0","jshint":"^2.5.6","mocha":"^2.1.0"},"license":"BSD-2-Clause","scripts":{"test":"npm run-script lint && npm run-script unit-test","lint":"jshint estraverse.js","unit-test":"mocha --compilers js:babel-register"}};
 
 /***/ }),
 /* 54 */
@@ -8465,7 +8465,7 @@ module.exports = timeSafeCompare;
 /* 175 */
 /***/ (function(module) {
 
-module.exports = {"_from":"escodegen@1.x.x","_id":"escodegen@1.14.3","_inBundle":false,"_integrity":"sha512-qFcX0XJkdg+PB3xjZZG/wKSuT1PnQWx57+TVSjIMmILd2yC/6ByYElPwJnslDsuWuSAp4AwJGumarAAmJch5Kw==","_location":"/escodegen","_phantomChildren":{},"_requested":{"type":"range","registry":true,"raw":"escodegen@1.x.x","name":"escodegen","escapedName":"escodegen","rawSpec":"1.x.x","saveSpec":null,"fetchSpec":"1.x.x"},"_requiredBy":["/degenerator"],"_resolved":"https://registry.npmjs.org/escodegen/-/escodegen-1.14.3.tgz","_shasum":"4e7b81fba61581dc97582ed78cab7f0e8d63f503","_spec":"escodegen@1.x.x","_where":"/Users/maful/code/tmp/github-actions-mailgun/node_modules/degenerator","bin":{"esgenerate":"bin/esgenerate.js","escodegen":"bin/escodegen.js"},"bugs":{"url":"https://github.com/estools/escodegen/issues"},"bundleDependencies":false,"dependencies":{"esprima":"^4.0.1","estraverse":"^4.2.0","esutils":"^2.0.2","optionator":"^0.8.1","source-map":"~0.6.1"},"deprecated":false,"description":"ECMAScript code generator","devDependencies":{"acorn":"^7.1.0","bluebird":"^3.4.7","bower-registry-client":"^1.0.0","chai":"^3.5.0","commonjs-everywhere":"^0.9.7","gulp":"^3.8.10","gulp-eslint":"^3.0.1","gulp-mocha":"^3.0.1","semver":"^5.1.0"},"engines":{"node":">=4.0"},"files":["LICENSE.BSD","README.md","bin","escodegen.js","package.json"],"homepage":"http://github.com/estools/escodegen","license":"BSD-2-Clause","main":"escodegen.js","maintainers":[{"name":"Yusuke Suzuki","email":"utatane.tea@gmail.com","url":"http://github.com/Constellation"}],"name":"escodegen","optionalDependencies":{"source-map":"~0.6.1"},"repository":{"type":"git","url":"git+ssh://git@github.com/estools/escodegen.git"},"scripts":{"build":"cjsify -a path: tools/entry-point.js > escodegen.browser.js","build-min":"cjsify -ma path: tools/entry-point.js > escodegen.browser.min.js","lint":"gulp lint","release":"node tools/release.js","test":"gulp travis","unit-test":"gulp test"},"version":"1.14.3"};
+module.exports = {"name":"escodegen","description":"ECMAScript code generator","homepage":"http://github.com/estools/escodegen","main":"escodegen.js","bin":{"esgenerate":"./bin/esgenerate.js","escodegen":"./bin/escodegen.js"},"files":["LICENSE.BSD","README.md","bin","escodegen.js","package.json"],"version":"1.14.3","engines":{"node":">=4.0"},"maintainers":[{"name":"Yusuke Suzuki","email":"utatane.tea@gmail.com","web":"http://github.com/Constellation"}],"repository":{"type":"git","url":"http://github.com/estools/escodegen.git"},"dependencies":{"estraverse":"^4.2.0","esutils":"^2.0.2","esprima":"^4.0.1","optionator":"^0.8.1"},"optionalDependencies":{"source-map":"~0.6.1"},"devDependencies":{"acorn":"^7.1.0","bluebird":"^3.4.7","bower-registry-client":"^1.0.0","chai":"^3.5.0","commonjs-everywhere":"^0.9.7","gulp":"^3.8.10","gulp-eslint":"^3.0.1","gulp-mocha":"^3.0.1","semver":"^5.1.0"},"license":"BSD-2-Clause","scripts":{"test":"gulp travis","unit-test":"gulp test","lint":"gulp lint","release":"node tools/release.js","build-min":"./node_modules/.bin/cjsify -ma path: tools/entry-point.js > escodegen.browser.min.js","build":"./node_modules/.bin/cjsify -a path: tools/entry-point.js > escodegen.browser.js"}};
 
 /***/ }),
 /* 176 */,
@@ -21636,7 +21636,57 @@ isStream.transform = function (stream) {
 
 /***/ }),
 /* 324 */,
-/* 325 */,
+/* 325 */
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
+
+"use strict";
+
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const core = __importStar(__webpack_require__(470));
+const mailgun_js_1 = __importDefault(__webpack_require__(185));
+const path_1 = __importDefault(__webpack_require__(622));
+function run() {
+    const apiKey = core.getInput('api_key', { required: true });
+    const domain = core.getInput('domain', { required: true });
+    const from = core.getInput('from', { required: true });
+    const to = core.getInput('to', { required: true });
+    const subject = core.getInput('subject');
+    const body = core.getInput('body');
+    const attachment = core.getInput('attachment');
+    const mg = mailgun_js_1.default({ apiKey: apiKey, domain: domain });
+    let data = {
+        from: from,
+        to: to,
+        subject: subject,
+        text: body,
+    };
+    if (attachment) {
+        const filepath = path_1.default.basename(attachment);
+        data.attachment = filepath;
+    }
+    mg.messages().send(data, function (err, body) {
+        if (err) {
+            core.setFailed(`Failed to send an email with error: ${err}`);
+        }
+        else {
+            core.info('Success to sent an email');
+        }
+    });
+}
+run();
+
+
+/***/ }),
 /* 326 */,
 /* 327 */,
 /* 328 */,
@@ -24056,7 +24106,7 @@ function toCallback (promise, callback) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-const util_1 = __webpack_require__(763);
+const util_1 = __webpack_require__(526);
 const constants_1 = __webpack_require__(272);
 const stream = __webpack_require__(413);
 /**
@@ -29355,54 +29405,33 @@ function plural(ms, n, name) {
 /***/ }),
 /* 525 */,
 /* 526 */
-/***/ (function(__unusedmodule, exports, __webpack_require__) {
+/***/ (function(__unusedmodule, exports) {
 
 "use strict";
 
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result["default"] = mod;
-    return result;
-};
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const core = __importStar(__webpack_require__(470));
-const mailgun_js_1 = __importDefault(__webpack_require__(185));
-const path_1 = __importDefault(__webpack_require__(622));
-function run() {
-    const apiKey = core.getInput('api_key', { required: true });
-    const domain = core.getInput('domain', { required: true });
-    const from = core.getInput('from', { required: true });
-    const to = core.getInput('to', { required: true });
-    const subject = core.getInput('subject');
-    const body = core.getInput('body');
-    const attachment = core.getInput('attachment');
-    const mg = mailgun_js_1.default({ apiKey: apiKey, domain: domain });
-    let data = {
-        from: from,
-        to: to,
-        subject: subject || 'Hello from Github Actions Mailgun',
-        text: body || 'Hello from Github Actions Mailgun',
-    };
-    if (attachment) {
-        const filepath = path_1.default.join(__dirname, '..', attachment);
-        data.attachment = filepath;
+/**
+ * Error wrapper for SocksClient
+ */
+class SocksClientError extends Error {
+    constructor(message, options) {
+        super(message);
+        this.options = options;
     }
-    mg.messages().send(data, function (err, body) {
-        if (err) {
-            core.setFailed(`Failed to send an email with error: ${err}`);
-        }
-        else {
-            core.setOutput('result', `Success to sent an email`);
-        }
-    });
 }
-run();
-
+exports.SocksClientError = SocksClientError;
+/**
+ * Shuffles a given array.
+ * @param array The array to shuffle.
+ */
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
+exports.shuffleArray = shuffleArray;
+//# sourceMappingURL=util.js.map
 
 /***/ }),
 /* 527 */,
@@ -42806,36 +42835,7 @@ module.exports = {
 
 
 /***/ }),
-/* 763 */
-/***/ (function(__unusedmodule, exports) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-/**
- * Error wrapper for SocksClient
- */
-class SocksClientError extends Error {
-    constructor(message, options) {
-        super(message);
-        this.options = options;
-    }
-}
-exports.SocksClientError = SocksClientError;
-/**
- * Shuffles a given array.
- * @param array The array to shuffle.
- */
-function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        let j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-}
-exports.shuffleArray = shuffleArray;
-//# sourceMappingURL=util.js.map
-
-/***/ }),
+/* 763 */,
 /* 764 */,
 /* 765 */,
 /* 766 */,
@@ -44895,7 +44895,7 @@ const smart_buffer_1 = __webpack_require__(118);
 const constants_1 = __webpack_require__(272);
 const helpers_1 = __webpack_require__(372);
 const receivebuffer_1 = __webpack_require__(806);
-const util_1 = __webpack_require__(763);
+const util_1 = __webpack_require__(526);
 class SocksClient extends events_1.EventEmitter {
     constructor(options) {
         super();

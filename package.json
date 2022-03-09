@@ -7,7 +7,7 @@
     "build": "tsc",
     "format": "prettier --write **/*.ts",
     "format-check": "prettier --check **/*.ts",
-    "pack": "ncc build"
+    "pack": "ncc build src/index.ts"
   },
   "repository": {
     "type": "git",
