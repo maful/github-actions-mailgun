@@ -17,14 +17,16 @@ inputs:
   subject:
     description: 'Email subject'
     required: false
+    default: 'Title - Github Actions Mailgun'
   body:
     description: 'Email body'
     required: false
+    default: 'Hello from Github Actions Mailgun'
   attachment:
     description: 'Attachment'
     required: false
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'dist/index.js'
 branding:
   color: 'green'

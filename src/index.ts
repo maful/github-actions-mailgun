@@ -15,8 +15,8 @@ function run() {
   let data: mailgun.messages.SendData = {
     from: from,
     to: to,
-    subject: subject || 'Hello from Github Actions Mailgun',
-    text: body || 'Hello from Github Actions Mailgun',
+    subject: subject,
+    text: body,
   };
 
   if (attachment) {
@@ -28,7 +28,7 @@ function run() {
     if (err) {
       core.setFailed(`Failed to send an email with error: ${err}`);
     } else {
-      core.setOutput('result', `Success to sent an email`);
+      core.info('Success to sent an email');
     }
   });
 }
