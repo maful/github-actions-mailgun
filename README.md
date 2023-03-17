@@ -4,6 +4,8 @@ Unofficial - This action gives the ability to send emails with Mailgun.
 
 [![test](https://github.com/maful/github-actions-mailgun/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/maful/github-actions-mailgun/actions/workflows/test.yml)
 
+> [Libur.run](https://github.com/maful/libur.run) - Empower Your HR with Next-Gen Open Source Self-Serve Platform
+
 ## Inputs
 
 | Key | Required | Description |
